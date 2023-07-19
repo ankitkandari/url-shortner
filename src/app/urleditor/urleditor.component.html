@@ -1,0 +1,20 @@
+<div class="url_editor_wrapper">
+    <div class="url_editor_img">
+        <img src="../../assets/link.jpg" />
+    </div>
+    <div class="url_editor_form">
+        <h1 class="url_editor_heading">Tryy . Fun</h1>
+        <!-- <form>
+                    <input type="url" name="url" class="url_editor_input" placeholder="https://example.com" />
+                    <button class="url_editor_btn" data="Shorten"></button>
+                </form> -->
+        <form [formGroup]="urlForm" (ngSubmit)="onSubmit()">
+            <input type="url" formControlName="url" class="url_editor_input" placeholder="https://example.com">
+            <button type="submit" class="url_editor_btn" data="Shorten" [disabled]="!urlForm.value.url"></button>
+        </form>
+        <div class="url_editor_result" *ngIf="short_url!==''">
+            <span (click)="getCopy(short_url??'')">{{short_url}}</span>
+            <button class="url_editor_btn url_editor_cpy_btn" (click)="getCopy(short_url??'')" data="Copy"></button>
+        </div>
+    </div>
+</div>

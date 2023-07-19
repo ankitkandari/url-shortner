@@ -1,0 +1,122 @@
+
+
+.url_editor_wrapper {
+    max-width: 800px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    border-radius: 12px;
+    flex: 1;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.url_editor_form {
+    padding: 0px 20px;
+    background: #0b529e;
+}
+
+.url_editor_form form {
+    margin: 90px 0 0 0;
+}
+
+.url_editor_input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.url_editor_input:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.url_editor_result {
+    background: #b9fff0;
+    padding: 10px;
+    margin: 60px 0px 40px 0px;
+    border-radius: 12px;
+}
+.url_editor_img{
+    display: flex;
+}
+.url_editor_img img {
+    width: 80%;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+.url_editor_btn {
+    padding: 8px 30px;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    background: var(--button-gradient);
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.url_editor_btn::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 30px;
+    background-color: white;
+    z-index: -1;
+    transition: 200ms;
+}
+
+.url_editor_btn::after {
+    content: attr(data);
+    font-size: 16px;
+    background: var(--button-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 200ms;
+    font-weight: 800;
+}
+
+.url_editor_heading {
+    color: #fff;
+    font-family: mallory, futura, arial black, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.1em;
+    line-height: 1.4;
+    padding: 0 0.25em;
+    text-shadow: 0.1vw 0.1vw #b5b5b555, 0.1vw -0.1vw #b5b5b555,
+        -0.1vw 0.1vw #b5b5b555, -0.1vw -0.1vw #b5b5b555;
+        margin: 20px 0;
+}
+
+@supports ((-webkit-background-clip: text) and (-webkit-text-stroke: 5vw)) {
+    .url_editor_heading {
+        background: linear-gradient(to right, #e233ff, #ff6b00);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 10px transparent;
+    }
+}
+
+@media (max-width: 576px) {
+    .url_editor_wrapper {
+        display: block;
+        box-shadow: none;
+    }
+
+    .url_editor_img {
+        display: none;
+    }
+}

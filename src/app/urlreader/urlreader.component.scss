@@ -1,0 +1,26 @@
+.url_reader_wrapper {
+    max-width: 150px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    border-radius: 12px;
+    flex: 1;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    align-items: center;
+}
+.url_reader_wrapper img{
+    width: 40px;
+    display: inline-block;
+}
+
+@media (max-width: 576px) {
+    .url_reader_wrapper{
+        box-shadow: none;
+    }
+    .url_reader_wrapper span{
+        color: #fff;
+    }
+}

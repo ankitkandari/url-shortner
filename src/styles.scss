@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+body { margin: 0; }
+*{box-sizing: border-box;user-select: none;}
+app-urleditor,app-urlreader {
+    height: 100vh;
+    display: flex;
+}
+:root {
+    --button-gradient: linear-gradient(to left, #e233ff, #ff6b00);
+}
+
+@media (max-width: 576px) {
+    body {
+        background: #0b529e;
+    }
+
+    .url_editor_wrapper {
+        display: block;
+        box-shadow: none;
+    }
+
+    .url_editor_img {
+        display: none;
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "shorturl-fire": {
+      "hosting": {
+        "shortner": [
+          "shorturl-fire"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "shorturl-fire"
+  }
+}
