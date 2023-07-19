@@ -3,12 +3,11 @@
 .url_editor_wrapper {
     max-width: 800px;
     display: flex;
-    margin: auto;
     width: 80%;
     border-radius: 12px;
-    flex: 1;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    flex: 0 0 auto;
 }
 
 .url_editor_form {
@@ -39,6 +38,10 @@
     padding: 10px;
     margin: 60px 0px 40px 0px;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .url_editor_img{
     display: flex;
@@ -99,6 +102,9 @@
     text-shadow: 0.1vw 0.1vw #b5b5b555, 0.1vw -0.1vw #b5b5b555,
         -0.1vw 0.1vw #b5b5b555, -0.1vw -0.1vw #b5b5b555;
         margin: 20px 0;
+}
+.url_editor_credits a {
+    color: #000;
 }
 
 @supports ((-webkit-background-clip: text) and (-webkit-text-stroke: 5vw)) {

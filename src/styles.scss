@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 body { margin: 0; }
-*{box-sizing: border-box;user-select: none;}
+*{box-sizing: border-box;user-select: none;font-family: Montserrat;}
 app-urleditor,app-urlreader {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 :root {
     --button-gradient: linear-gradient(to left, #e233ff, #ff6b00);
