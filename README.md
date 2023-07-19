@@ -1,5 +1,5 @@
 # Tryy.fun URL Shortner ✌
-#### Angular Firebase app for generating short urls.Firebase Firestore is being used for storing urls.
+#### Angular Firebase app for generating short URLs. Using Firebase Firestore for storing urls.
 
 ## App Screenshot
 ![Live App Screenshot](src/assets/screenshot.png)
